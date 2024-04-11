@@ -9,7 +9,7 @@
       }
     }
 
-/* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
+/* ----- ADD SHADOW ON NAVIGATION BAR----- */
     window.onscroll = function() {headerShadow()};
 
     function headerShadow() {
@@ -41,7 +41,7 @@
    })
 
 
-/* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
+/*  SCROLL REVEAL ANIMATION */
    const sr = ScrollReveal({
           origin: 'top',
           distance: '80px',
@@ -64,7 +64,7 @@
   /* -- HEADINGS -- */
   sr.reveal('.top-header',{})
 
-/* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
+/*  SCROLL REVEAL LEFT_RIGHT ANIMATION  */
 
   /* -- ABOUT INFO & CONTACT INFO -- */
   const srLeft = ScrollReveal({
@@ -90,7 +90,7 @@
   
 
 
-/* ----- CHANGE ACTIVE LINK ----- */
+/*  CHANGE ACTIVE LINK  */
   
   const sections = document.querySelectorAll('section[id]')
 
@@ -115,25 +115,7 @@
   }
 
   window.addEventListener('scroll', scrollActive)
-//   cv download
-  function downloadCV() {
-        // Replace 'path_to_your_cv_file.pdf' with the actual path to your CV file
-        var cvUrl = 'assets/graphic.pdf';
-        
-        // Create a temporary anchor element
-        var downloadLink = document.createElement('a');
-        downloadLink.href = cvUrl;
-        downloadLink.download = 'graphic.pdf'; // Set the name for the downloaded file
-        
-        // Append the anchor element to the document body
-        document.body.appendChild(downloadLink);
-        
-        // Trigger a click event on the anchor element to start the download
-        downloadLink.click();
-        
-        // Remove the anchor element from the document body
-        document.body.removeChild(downloadLink);
-    }
+
     // dark mode
     const darkModeToggle = document.getElementById('dark-mode-toggle');
 
@@ -142,21 +124,21 @@ darkModeToggle.addEventListener('change', () => {
 });
 
 // cv button
-document.getElementById('download-cv-btn').addEventListener('click', function() {
-  // Path to your CV file
-  var cvFilePath = 'D:\Seneca\web development\Assignment4-Rabin Majhi INM 120\assets';
+// document.getElementById('download-cv-btn').addEventListener('click', function() {
+//   // Path to your CV file
+//   var cvFilePath = 'D:\Seneca\web development\Assignment4-Rabin Majhi INM 120\assets';
   
-  // Create a link element
-  var link = document.createElement('a');
-  link.href = cvFilePath;
-  link.download = 'your_cv_file.pdf'; // Specify the file name for download
+
+//   var link = document.createElement('a');
+//   link.href = cvFilePath;
+//   link.download = 'your_cv_file.pdf'; // Specify the file name for download
   
-  // Append the link to the body
-  document.body.appendChild(link);
+//   // Append the link to the body
+//   document.body.appendChild(link);
   
-  // Trigger the download
-  link.click();
+//   // Trigger the download
+//   link.click();
   
-  // Remove the link from the body
-  document.body.removeChild(link);
-});
+//   // Remove the link from the body
+//   document.body.removeChild(link);
+// });
